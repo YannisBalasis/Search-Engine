@@ -6,8 +6,24 @@ from bs4 import BeautifulSoup
 import streamlit as st
 
 # SetUp
-st.title("Patras Medicine iGEM 2025 - Biomedical Search Engine")
-query = st.text_input("Enter your search query:", "")
+
+
+st.image("logo-2025-final.png", width=200)
+
+st.markdown("""
+    <div style='background-color: #004d99; padding: 10px; border-radius: 10px'>
+        <h1 style='color: white; text-align: center;'>Patras Medicine iGEM 2025 - Search Engine</h1>
+    </div>
+""", unsafe_allow_html=True)
+
+st.info("""
+Αυτό είναι το εργαλείο αναζήτησης της φοιτητικής ομάδας **Patras Medicine iGEM 2025**.
+- Δώσε λέξεις-κλειδιά στο πεδίο παρακάτω.
+- Τα αποτελέσματα εμφανίζονται ταξινομημένα κατά σχετικότητα.
+""")
+
+query = st.text_input("🔍 Αναζήτησε άρθρα:", placeholder="π.χ. Molecular mechanisms of obesity-related diabetes")
+
 
 # Load model once
 @st.cache_resource
