@@ -31,7 +31,7 @@ st.markdown("""
 
 st.markdown("""
 <div style='
-    background: linear-gradient(90deg, #cce0f5 0%, #e6f2ff 100%);
+    background: linear-gradient(90deg, #cce0f5 0%, #b3cde0 100%);
     padding: 15px;
     border-left: 5px solid #004d99;
     border-radius: 10px;
