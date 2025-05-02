@@ -22,7 +22,7 @@ st.markdown("""
         margin-bottom: 20px;
     '>
         <h1 style='
-            background: linear-gradient(90deg, #004d99 0%, #007acc 100%);
+            background: linear-gradient(90deg, #004d99 0%, #007acc 100%); 
             padding: 20px;
             border-radius: 15px;
             box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
