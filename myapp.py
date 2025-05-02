@@ -39,7 +39,7 @@ st.markdown("""
 # Info Box
 st.markdown("""
 <div style='
-    background-color: #cce0f5;
+    background-color: #6699cc;
     padding: 15px;
     border-left: 5px solid #004d99;
     border-radius: 10px;
