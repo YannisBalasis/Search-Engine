@@ -8,19 +8,42 @@ import streamlit as st
 # SetUp
 
 
-st.image("logo-2025-final.png", width=200)
-
+# Centered logo from GitHub
 st.markdown("""
-    <div style='background-color: #004d99; padding: 10px; border-radius: 10px'>
-        <h1 style='color: white; text-align: center;'>Patras Medicine iGEM 2025 - Search Engine</h1>
+    <div style='text-align: center; padding: 20px;'>
+        <img src='https://raw.githubusercontent.com/YannisBalasis/search_engine/main/logo-2025-final.png' width='200'>
     </div>
 """, unsafe_allow_html=True)
 
-st.info("""
-Αυτό είναι το εργαλείο αναζήτησης της φοιτητικής ομάδας **Patras Medicine iGEM 2025**.
-- Δώσε λέξεις-κλειδιά στο πεδίο παρακάτω.
-- Τα αποτελέσματα εμφανίζονται ταξινομημένα κατά σχετικότητα.
-""")
+# Fancy header
+st.markdown("""
+    <div style='
+        background: linear-gradient(90deg, #004d99 0%, #007acc 100%);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        text-align: center;
+        margin-bottom: 20px;
+    '>
+        <h1 style='color: white; font-size: 2.5em;'>Patras Medicine iGEM 2025 - Search Engine</h1>
+    </div>
+""", unsafe_allow_html=True)
+
+# Sleek info box
+st.markdown("""
+<div style='
+    background-color: #e6f2ff;
+    padding: 15px;
+    border-left: 5px solid #004d99;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+'>
+    🔬 Αυτό είναι το εργαλείο αναζήτησης της φοιτητικής ομάδας <strong>Patras Medicine iGEM 2025</strong>.<br><br>
+    ➔ Δώσε λέξεις-κλειδιά στο πεδίο παρακάτω.<br>
+    ➔ Τα αποτελέσματα εμφανίζονται ταξινομημένα κατά σχετικότητα.
+</div>
+""", unsafe_allow_html=True)
 
 query = st.text_input("🔍 Αναζήτησε άρθρα:", placeholder="π.χ. Molecular mechanisms of obesity-related diabetes")
 
