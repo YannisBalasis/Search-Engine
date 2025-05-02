@@ -29,12 +29,9 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-# Sleek info box
 st.markdown("""
 <div style='
-    background-color: #cce0f5;
-    
-
+    background: linear-gradient(90deg, #cce0f5 0%, #e6f2ff 100%);
     padding: 15px;
     border-left: 5px solid #004d99;
     border-radius: 10px;
@@ -46,6 +43,7 @@ st.markdown("""
     ➔ Τα αποτελέσματα εμφανίζονται ταξινομημένα κατά σχετικότητα.
 </div>
 """, unsafe_allow_html=True)
+
 
 query = st.text_input(" Αναζήτησε άρθρα:", placeholder="π.χ. Molecular mechanisms of obesity-related diabetes")
 
