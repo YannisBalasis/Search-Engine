@@ -6,46 +6,55 @@ from bs4 import BeautifulSoup
 import streamlit as st
 
 # SetUp
-
-
-# Centered logo from GitHub
+# Logo Left
 st.markdown("""
-    <div style='text-align: center; padding: 20px;'>
-        <img src='https://raw.githubusercontent.com/YannisBalasis/search_engine/main/logo-2025-final.png' width='200'>
+    <div style='display: flex; align-items: center;'>
+        <div style='flex: 1;'>
+            <img src='https://raw.githubusercontent.com/YannisBalasis/search_engine/main/logo-2025-final.png' width='100'>
+        </div>
     </div>
 """, unsafe_allow_html=True)
 
-# Fancy header
+# Header Center
 st.markdown("""
     <div style='
-        background: linear-gradient(90deg, #004d99 0%, #007acc 100%);
-        padding: 20px;
-        border-radius: 15px;
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
         text-align: center;
+        padding: 10px;
         margin-bottom: 20px;
     '>
-        <h1 style='color: white; font-size: 2.5em;'>Patras Medicine iGEM 2025 - Search Engine</h1>
+        <h1 style='
+            background: linear-gradient(90deg, #004d99 0%, #007acc 100%);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            color: white;
+            font-size: 2.5em;
+            margin: 0;
+        '>Patras Medicine iGEM 2025 - Search Engine</h1>
     </div>
 """, unsafe_allow_html=True)
 
+
+
+# Info Box
 st.markdown("""
 <div style='
-    background: linear-gradient(90deg, #cce0f5 0%, #b3cde0 100%);
+    background-color: #cce0f5;
     padding: 15px;
     border-left: 5px solid #004d99;
     border-radius: 10px;
     margin-bottom: 20px;
     font-size: 1.1em;
 '>
-    Αυτό είναι το εργαλείο αναζήτησης της φοιτητικής ομάδας <strong>Patras Medicine iGEM 2025</strong>.<br><br>
+     Αυτό είναι το εργαλείο αναζήτησης της φοιτητικής ομάδας <strong>Patras Medicine iGEM 2025</strong>.<br><br>
     ➔ Δώσε λέξεις-κλειδιά στο πεδίο παρακάτω.<br>
     ➔ Τα αποτελέσματα εμφανίζονται ταξινομημένα κατά σχετικότητα.
 </div>
 """, unsafe_allow_html=True)
 
-
+# Search Box
 query = st.text_input(" Αναζήτησε άρθρα:", placeholder="π.χ. Molecular mechanisms of obesity-related diabetes")
+
 
 
 # Load model once
