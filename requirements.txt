@@ -1,0 +1,6 @@
+aiohttp
+pandas
+sentence-transformers
+beautifulsoup4
+lxml
+streamlit
