@@ -7,15 +7,14 @@ import streamlit as st
 
 # SetUp
 # Logo Left
+# === LOGO CENTERED ===
 st.markdown("""
-    <div style='display: flex; align-items: center;'>
-        <div style='flex: 1;'>
-            <img src='https://raw.githubusercontent.com/YannisBalasis/search_engine/main/logo-2025-final.png' width='100'>
-        </div>
+    <div style='text-align: center; padding: 20px;'>
+        <img src='https://raw.githubusercontent.com/YannisBalasis/search_engine/main/logo-2025-final.png' width='150'>
     </div>
 """, unsafe_allow_html=True)
 
-# Header Center
+# === HEADER CENTER ===
 st.markdown("""
     <div style='
         text-align: center;
@@ -33,6 +32,7 @@ st.markdown("""
         '>Patras Medicine iGEM 2025 - Search Engine</h1>
     </div>
 """, unsafe_allow_html=True)
+
 
 
 
