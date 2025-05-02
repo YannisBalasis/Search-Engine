@@ -32,20 +32,22 @@ st.markdown("""
 # Sleek info box
 st.markdown("""
 <div style='
-    background-color: #e6f2ff;
+    background-color: #cce0f5;
+    
+
     padding: 15px;
     border-left: 5px solid #004d99;
     border-radius: 10px;
     margin-bottom: 20px;
     font-size: 1.1em;
 '>
-    🔬 Αυτό είναι το εργαλείο αναζήτησης της φοιτητικής ομάδας <strong>Patras Medicine iGEM 2025</strong>.<br><br>
+    Αυτό είναι το εργαλείο αναζήτησης της φοιτητικής ομάδας <strong>Patras Medicine iGEM 2025</strong>.<br><br>
     ➔ Δώσε λέξεις-κλειδιά στο πεδίο παρακάτω.<br>
     ➔ Τα αποτελέσματα εμφανίζονται ταξινομημένα κατά σχετικότητα.
 </div>
 """, unsafe_allow_html=True)
 
-query = st.text_input("🔍 Αναζήτησε άρθρα:", placeholder="π.χ. Molecular mechanisms of obesity-related diabetes")
+query = st.text_input(" Αναζήτησε άρθρα:", placeholder="π.χ. Molecular mechanisms of obesity-related diabetes")
 
 
 # Load model once
