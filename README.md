@@ -47,7 +47,7 @@ Data Sources: PubMed, arXiv, EuropePMC, PMC
 
 ##  Installation
 
-1. Clone the repository:
+
 
 ```bash
 git clone https://github.com/YannisBalasis/literature-search-engine.git
